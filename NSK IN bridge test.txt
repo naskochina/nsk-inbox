@@ -1,0 +1,16 @@
+TASK: bridge test — потвърди че Claude→GitHub→droplet цикълът работи
+FILE: none
+DON'T: nothing
+
+Ако този файл се появи в /root/nsk/inbox/ след git pull,
+значи целият мост е жив:
+
+  Claude пише файл (тук)
+      ↓
+  ти качваш в github.com/naskochina/nsk-inbox
+      ↓
+  cron прави git pull на всеки 2 мин
+      ↓
+  файлът е в /root/nsk/inbox/ автоматично
+
+Мостът е готов. Оттук нататък работим така за всяка задача.
